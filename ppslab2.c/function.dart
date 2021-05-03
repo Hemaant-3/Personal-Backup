@@ -24,7 +24,7 @@ test_fun2(a, {s1: 22}) {
 }
 
 /*
-lambda function
+lambda function/ arrow function
 */
 printMsg() => print('Hello world');
 int test_n() => 123;

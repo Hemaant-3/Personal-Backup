@@ -18,7 +18,10 @@ class vehic {
   }
   vehic.m(String engine) {
     /*/
-named function in dart by voking
+named constructor  in dart by voking
+the amjor differeeence between function and constructor is 
+function have it's return type(void, int etc).
+constructor don't have any return type
     */
     print("the car engine is ${engine}");
   }

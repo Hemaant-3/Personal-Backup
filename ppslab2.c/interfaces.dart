@@ -1,16 +1,19 @@
 //implementing with interfaces and using class
 class printer {
   void print_data() {
-    // print("hello");
+    print("hello");
   }
 }
 
 class Consoleprinter implements printer {
-  void print_data() {}
+  void print_data() {
+    print('Hemnant');
+  }
 }
 
 /*
-Now using multiple interfaces to implements and implementation of class
+Now using multiple interfaces to implements and 
+implementation of class
 */
 class calculate_total {
   void ret_tot() {}
@@ -33,8 +36,8 @@ class calculator implements calculate_discount, calculate_total {
 }
 
 main(List<String> args) {
-  // Consoleprinter cp = new Consoleprinter();
-  // cp.print_data();
+  Consoleprinter cp = new Consoleprinter();
+  cp.print_data();
   calculator c = new calculator();
   print("The gross total is ${c.ret_tot()}");
   print("Discount ${c.ret_disc()}");

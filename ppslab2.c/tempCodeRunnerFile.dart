@@ -1,2 +1,2 @@
 
-  // print(s1.name);
+  cp.print_data();

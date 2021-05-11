@@ -1,2 +1,3 @@
-
-  cp.print_data();
+= new Student(); // object
+  s.method();
+  s.method2();

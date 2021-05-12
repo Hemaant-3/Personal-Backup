@@ -22,7 +22,7 @@ must watch semicolon while using shorthand operator
   */
   new Student()
     ..method()
-    ..method2(); // seemicolon is rember here
+    ..method2(); // seemicolon is remember here
 
   /*
 tostring method/function to return string from int and flaot

@@ -36,14 +36,16 @@ For Generic queue
   mu.add(78);
   mu.add(32);
   mu.add(52);
-  // print(mu.runtimeType);
-  // stdout.write(mu);
-  // for (int a in mu) print(a);
+  print(mu.runtimeType);
+  mu.removeLast();
+  mu.removeFirst();
+  stdout.write(mu);
+  for (int a in mu) print(a);
   /*
 Generic Map [values and key pair] in map
   */
   Map<String, int> my = new Map<String, int>();
   my.addAll({'Hemant': 28, 'Monu': 13});
-  print(my);
-  my.forEach((key, value) => print('$key : $value'));
+  // print(my);
+  // my.forEach((key, value) => print('$key : $value'));
 }

@@ -1,4 +1,4 @@
-0.2#include <stdio.h>
+#include <stdio.h>
 #include <string.h>
 /* complete Project  of Calculator using C Languge*/
 int main()
@@ -53,7 +53,8 @@ int main()
             printf("your answer is : %0.2f\n", result);
         default:
             printf("invalid operation, please try again\n\n");
-            break;
+            goto end;
+            // break;
         }
     }
 end:

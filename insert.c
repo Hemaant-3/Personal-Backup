@@ -7,7 +7,7 @@ scanf("%d", &size);
 printf("enter element of array\n");
 for ( i = 0; i < size; i++)
 {
-    scanf("%d", &a[i]); //inserting data
+    scanf("%d", &a[i]); //inserting data in array
 }
 printf("enter the data you want to insert\n");
 scanf("%d", &num);

@@ -26,7 +26,7 @@ if (head ==0)
       temp = newnode; //temp++; 
 
    }
-   printf("enter 1 for exit and 1 for adding next element in list");
+   printf("enter 1 for exit and 1 for adding next element in list: ");
    scanf("%d", &choice);
 }
    temp = head;

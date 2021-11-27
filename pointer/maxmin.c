@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
     int temp;
@@ -24,10 +25,13 @@ int main()
             // printf("%d ", arr[j]);
         }
     }
-for (int i = 0; i < size; i++)
-    {
-        printf("%d ", arr[i]);
+// for (int i = 0; i < size; i++)
+//     {
+//         printf("%d ", arr[i]);
        
-    }
+//     }
+    
+    printf("\n the max element is = %d\n", arr[size-1]);
+    printf("the min element is = %d",arr[0]);
     return 0;
 }

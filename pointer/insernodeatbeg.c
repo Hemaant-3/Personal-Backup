@@ -8,14 +8,14 @@ struct node
 };
 int main()
 {
-    int choice;
+    int choice, num;
     int count = 0;
-    struct node *newnode,*p, *temp, *head;
+    struct node *newnode,*p, *temp, *head, *add;
     head = 0;
     while (choice)
     {
         newnode = (struct node *)malloc(sizeof(struct node));
-        printf("enter the data: \n");
+        printf("enter the data: ");
         scanf("%d", &newnode->data);
         newnode->next = 0;
         //condition for updating head
@@ -28,12 +28,20 @@ int main()
             temp->next = newnode; //updating the address
             temp = newnode;       //pointing temp pointer to next node
         }
-        printf("do you want to contionue, or enter new node: \n (0,1)");
+        printf("do you want to contionue, or enter new node: \n (0,1): ");
         scanf("%d", &choice);
     }
     temp = head;
-    
+    printf("do you want to add new node, 0 for no and 1 for yes: \n (0,1): ");
+        scanf("%d", &num);
+    if(num){
+        add = (struct node*)malloc(sizeof(struct node));
+        printf("enter the data u want to insert at begning: ");
+        scanf("%d", &add->data);
+        add->next = head;
+        head = temp = add;
 
+    }
     //for printing the value
     while (temp != 0)
     {

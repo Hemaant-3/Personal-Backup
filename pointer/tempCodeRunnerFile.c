@@ -1,6 +1,2 @@
-r (int i = 0; i < size; i++)
-//     {
-//         printf("%d ", arr[i]);
-       
-//     }
-    
+ printf("do you want to contionue, or enter new node: \n (0,1): ");
+        scanf("%d", &choice);

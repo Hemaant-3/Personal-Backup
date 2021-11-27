@@ -8,7 +8,7 @@ typedef struct node
 int main()
 {
     int choice, pos,t;
-    int count = 0;
+    
     node *newnode, *temp, *head, *add;
     head = 0;
     while (t){
@@ -32,18 +32,24 @@ int main()
     temp = head;
     printf("enter the 0 for skip and 1 for adding node at specific position: ");
     scanf("%d", &choice);
+    /* logic to insert position*/
     if (choice)
     {
         printf("enter the position: ");
         scanf("%d", &pos);
+
+        // while (count <= pos)
+        // {
+        //     temp = temp->next;
+        //     count = count+1;
+        // }
+        for(int i=1;i<pos-1;i++)  //moving to the (n-1)th position node in the linked list
+    	{
+        	temp=temp->next;
+    	}
         add = (node *)malloc(sizeof(node));
         printf("enter the data=>  ");
         scanf("%d", &add->data);
-        while (count <= pos)
-        {
-            temp = temp->next;
-            count = count+1;
-        }
         add->next = temp->next;
         temp->next = add;
     }

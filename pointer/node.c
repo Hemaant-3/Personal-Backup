@@ -32,8 +32,9 @@ temp = head;
 //for printing the value
 while (temp!=0)
 {
+   
     printf("%d, ", temp->data);
-    temp = temp ->next;
+     temp = temp ->next;
     count++;
 }
 printf("\n size of linkedlist is: %d", count);

@@ -124,12 +124,12 @@ import base64
 
 # Function to encode
 def encode(key, clear):
-    enc = []
+    enc = [] #storing the character, given order of character.
 
     for i in range(len(clear)):
         key_c = key[i % len(key)]
         enc_c = chr((ord(clear[i]) +
-                     ord(key_c)) % 256)
+                     ord(key_c)) % 256) #using the order of coressponding character msg.
 
         enc.append(enc_c)
 
@@ -148,7 +148,6 @@ def decode(key, enc):
 
         dec.append(dec_c)
     return "".join(dec)
-
 
 def Ref():
     print("Message= ", (Msg.get()))

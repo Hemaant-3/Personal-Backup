@@ -1,1 +1,2 @@
-for i in range(len(c+1)):
+afe_b64decode(len(enc)).decode()
+# print(enc,end='')

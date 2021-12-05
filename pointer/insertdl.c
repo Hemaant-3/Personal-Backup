@@ -70,12 +70,31 @@ void addatend()
     newnode->prev = tail;
     tail = newnode;
 }
+void insertatpos()
+{
+    nod *temp;
+    temp = head;
+    int pos;
+    int i = 1;
+    print("enter the position you want to insert: ");
+    scanf("%d", &pos);
+    newnode = (nod *)malloc(sizeof(nod));
+    printf("enter the data to insert: ");
+    scanf("%d", &newnode->data);
+    while (i < pos - 1)
+    {
+        temp = temp->next;
+        i++;
+    }
+   newnode->prev = temp;
+   newnode->next = temp ->next;
+   temp->next = newnode;
+   temp->next->prev = newnode;
+}
 int main()
 {
     create();
-    print();
-    // addatbeg();
-    addatend();
+    insertatpos();
     print();
     return 0;
 }

@@ -98,14 +98,14 @@ nod *temp;
 
 #include <stdio.h>
 #include <stdlib.h>
-int main()
-{
-    create();
-    addatend();
-    print();
-    addatbeg();
-    print();
-    insertatpos();
-    print();
-    return 0;
-}
+// int main()
+// {
+//     create();
+//     addatend();
+//     print();
+//     addatbeg();
+//     print();
+//     insertatpos();
+//     print();
+//     return 0;
+// }

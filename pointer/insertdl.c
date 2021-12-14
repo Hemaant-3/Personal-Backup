@@ -48,6 +48,7 @@ void print()
         printf("%d, ", temp->data);
         temp = temp->next;
     }
+    printf("\n");
 }
 void addatbeg()
 {

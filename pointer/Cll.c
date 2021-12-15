@@ -24,9 +24,11 @@ void createcll()
         temp->next = newnode;
         temp = newnode;
     }
-    temp->next = head; // circular condition for singly circular list
+     printf("%d, ",temp->data); //checking
+    // temp->next = head; // circular condition for singly circular list
     printf("Enter 0 for print and 1 for add newnode: ");
     scanf("%d", &choice);
+    //  printf(" after temp = head %d, ",temp->data); //checking
     }
 }
 
@@ -39,6 +41,7 @@ void dispcll(){
     }
     printf(" %d", temp->data);
 }
+
 int main()
 {
 createcll();

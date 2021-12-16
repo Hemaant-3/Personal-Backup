@@ -74,7 +74,11 @@ if __name__ == "__main__":
             speak(results)
 
         elif 'open youtube' in query:
+            speak('opening youtube in browser...')
             webbrowser.open("youtube.com")
+        elif 'linkedin' in query:
+            speak('redirecting to your linkedin profile...')
+            webbrowser.open("linkedin.com")
 
         elif 'open google' in query:
             webbrowser.open("google.com")

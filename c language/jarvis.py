@@ -38,6 +38,7 @@ def takeCommand():
         print("Listening...")
         r.pause_threshold = 1
         audio = r.listen(source)
+        
 
     try:
         print("Recognizing...")    
@@ -63,6 +64,7 @@ if __name__ == "__main__":
     while True:
     # if 1:
         query = takeCommand().lower()
+        
 
         # Logic for executing tasks based on query
         if 'wikipedia' in query:
@@ -77,6 +79,7 @@ if __name__ == "__main__":
             speak('opening youtube in browser...')
             webbrowser.open("youtube.com")
         elif 'linkedin' in query:
+            print(f"User said: {query}\n")
             speak('redirecting to your linkedin profile...')
             webbrowser.open("linkedin.com")
 

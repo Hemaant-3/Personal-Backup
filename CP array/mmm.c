@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+/* find element in given array*/
 int main()
 {
     int a[3][4] = {{1, 3, 5, 7},

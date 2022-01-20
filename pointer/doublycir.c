@@ -35,11 +35,11 @@ void create(){
     
 }
 void display_list(){
-    nod *temp = head;
-    while (temp!=tail)
+    nod *pnode = head;
+    while (pnode!=tail)
     {
-        printf("%d, ",temp->data);
-        temp = temp->next;
+        printf("%d, ",pnode->data);
+        pnode = pnode->next;
     }
-    printf("%d, ",temp->data);
+    printf("%d, ",pnode->data);
 }

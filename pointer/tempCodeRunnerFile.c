@@ -1,2 +1,9 @@
-
-    // disp_list();
+if (temp->next == head)
+    // {
+    //     tail = temp->prev;
+    //     free(temp);
+    // }
+    // else
+    // {
+    //     free(temp);
+    // }

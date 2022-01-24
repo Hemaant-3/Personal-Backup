@@ -130,6 +130,6 @@ int main()
     // delatbeg();
     // deleatend();
     del_at_specific_positon();
-    disp_list();
+    disp_list();        
     return 0;
 }

@@ -7,12 +7,12 @@ typedef struct node
     struct node *next;
 } nod;
 // Define pointer to use in program.
-nod *newnode, *head, *tail;
+nod *newnode, *head=0, *tail;
 // Definition of function to creating linkedlist
 void create_list()
 {
     int choice;
-    head = 0;
+    
     while (choice)
     {
         newnode = (nod *)malloc(sizeof(nod));
@@ -129,7 +129,7 @@ int main()
 
     // delatbeg();
     // deleatend();
-    // del_at_specific_positon();
-    // disp_list();
+    del_at_specific_positon();
+    disp_list();
     return 0;
 }

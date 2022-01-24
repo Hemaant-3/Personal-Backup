@@ -5,10 +5,10 @@ typedef struct node
     int data;
     struct node *prev,*next;
 }nod;
-nod *head,*tail;
+nod *head=0,*tail;
 void create(){
     nod* newnode;
-    head = 0;
+    
     int choice =1;
     while (choice)
     {

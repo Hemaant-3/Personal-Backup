@@ -1,0 +1,17 @@
+# %% [markdown]
+# ### Numpy simple library
+# 
+
+# %%
+simple_list = [12,34,21,54,68,98,23,65]
+print(simple_list,type(simple_list))
+
+# %%
+import numpy as np #importing numpy library
+np_simple_list = np.array(simple_list)
+print(np_simple_list, type(np_simple_list))
+
+# %%
+
+
+

@@ -27,7 +27,7 @@ for (j = 0;j < size; j++)
 }
 if (j==size)
 {
-    printf("element not found");
+    printf("Element not found");
 }
 
 
